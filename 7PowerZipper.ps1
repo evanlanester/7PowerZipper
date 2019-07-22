@@ -1,5 +1,5 @@
 #v2.4a###########################################
-### 7PowerZipper (7Zip by Igor Paslow Licensed under GNU)
+### 7PowerZipper (7Zip by Igor Pavlov Licensed under GNU)
 ### Date: 2019-07-14
 ### Author: Evan Lane
 ### Last Updated: 2019-07-22
