@@ -33,7 +33,7 @@ $ZipVersion = $ZipInfo.Substring(10,5) -replace '[.]',''
 ### Downloads 7Zip Binaries if not present ###
 if (!(Test-Path "$7ZipLocation\7*")) {
     Invoke-WebRequest -Uri "https://www.7-zip.org/a/7z$LatestVersion-extra.7z" -UseBasicParsing -OutFile "$Env:Temp\7z$LatestVersion-extra.7z"
-    & $Zipper x -aoa "$Env:Temp\7z$LatestVersion-extra.7z" "$7zipLocation\"
+    Expand-Archive -Path "$Env:Temp\7z$LatestVersion-extra.7z"-DestinationPath "$7zipLocation\"
 } 
 ###     ! AUTOMATED DOWNLOADING !     ###
 ### Checks your 7Zip Binaries Version ###
