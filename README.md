@@ -12,11 +12,12 @@ Here is an example usage:
 
 ```powershell
 Powershell +3.0
-PS C:\ ./7PowerZipper.ps1 -7zipLocation C:\<Location> -FileToBeZipped C:\<Some File or Directory> -ZipDestination C:\<Some File.zip>
+PS C:\ 7PowerZipper -Path C:\<Some File or Directory> -DestinationPath C:\<Some File.zip>
 ```
 
 Defaults I use:
 ```Powershell
+$today = Get-Date -Format "yyyy-MM-dd"                  # Format your backups with a nice sortable date.
 $7zipLocation = "C:\Scripts\7PowerZipper"               # This is the location for your 7zip Files.
 $FileToBeZipped = "C:\Data\"                            # This can be a Directory or a Single File
 $ZipDestination = "D:\Backups\FullBackup.$($today).zip" # This is the Output File I date my Backups.
